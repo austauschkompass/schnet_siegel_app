@@ -1,4 +1,4 @@
-# schnet-rating-widget
+# Schueleraustausch.net Bewertungssiegel Widget
 
 ## Howto
 
