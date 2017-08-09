@@ -1,6 +1,6 @@
 = schnet-rating-widget
 
-== SCHDE-Api: 
+h2. SCHDE-Api: 
 
 single organisation:
 
