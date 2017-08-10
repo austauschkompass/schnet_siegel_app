@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders always given content 1`] = `
+<div>
+  <img
+    alt="siegel"
+    src="siegel-s.png"
+    style={
+      Object {
+        "position": "relative",
+        "right": "-155px",
+        "top": "44px",
+        "width": "40px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "border": "1px solid lightGray",
+        "borderRadius": "6px",
+        "borderTop": "8px solid #00a4f9",
+        "boxShadow": "1px 1px 3px lightgrey",
+        "boxSizing": "border-box",
+        "color": "#363636",
+        "fontFamily": "Arial, sans-serif",
+        "fontSize": "11px",
+        "fontStyle": "normal",
+        "lineHeight": "1.1",
+        "margin": "5px",
+        "padding": "8px",
+        "textAlign": "left",
+        "textShadow": "none",
+        "textTransform": "none",
+        "width": "180px",
+      }
+    }
+  >
+    <h2
+      style={
+        Object {
+          "color": "#00a4f9",
+          "fontSize": "13px",
+          "fontWeight": "bold",
+          "lineHeight": "1.0",
+          "textAlign": "center",
+        }
+      }
+    >
+      Schueleraustausch.net
+    </h2>
+    <p
+      style={
+        Object {
+          "fontSize": "10px",
+          "textAlign": "center",
+          "textDecoration": "none",
+        }
+      }
+    >
+      42
+       Schüler bewerteten 
+      <span
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        GYG
+      </span>
+    </p>
+    <div
+      style={
+        Object {
+          "borderBottom": "1px solid lightgrey",
+          "borderTop": "1px solid lightgrey",
+          "fontSize": "12px",
+          "paddingBottom": "10px",
+          "paddingTop": "10px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <img
+        alt="bewertung"
+        src="star-3.5.png"
+      />
+      <br />
+      <strong>
+        Sehr gut
+         (
+        3.7
+        /5)
+      </strong>
+    </div>
+    <div
+      style={
+        Object {
+          "fontSize": "10px",
+          "textAlign": "center",
+          "textDecoration": "none",
+        }
+      }
+    >
+      <p>
+        Stand: 
+        8/2017
+        <br />
+        Aktuelle Schülerbewertungen auf
+        <br />
+        <a
+          alt="Bewertungen auf Schueleraustausch.net"
+          href="https://www.schueleraustausch.net"
+          style={
+            Object {
+              "color": "#363636",
+              "textDecoration": "none",
+            }
+          }
+        >
+          www.schueleraustausch.net
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

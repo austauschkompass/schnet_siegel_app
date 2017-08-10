@@ -1,5 +1,14 @@
 = schnet-rating-widget
 
+
+simple widget that displays numbers/average of organisation ratings collected by s.de.
+to include:
+
+```
+<div id="schnet-ratings-widget" data-organisation='gyg' data-token='xxxxxxx'></div>
+```
+
+
 == SCHDE-Api: 
 
 single organisation:

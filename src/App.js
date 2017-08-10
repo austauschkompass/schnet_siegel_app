@@ -131,7 +131,7 @@ class App extends Component {
             <span style={orgaStyle}>{this.props.organisation}</span>
           </p>
           <div style={starSection}>
-            <img src={floatAsImage(this.props.average)} alt='bewertung' />
+            <img src={floatAsImage(this.props.average)} alt='bewertung' /><br />
             <strong>{floatAsWord(this.props.average)} ({this.props.average.toFixed(1)}/5)</strong>
           </div>
           <div style={bottomStyle}>
