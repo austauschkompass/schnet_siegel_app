@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import siegel from './siegel-s.png';
 import star0 from './star-0.png';
 import star05 from './star-0.5.png';
@@ -74,13 +73,12 @@ const linkStyle = {
 }
 
 class App extends Component {
-  
   render() {
     const abbreviateDate = (dateString) => {
       let myDate = new Date(dateString)
       return myDate.getMonth() + 1 + '/' + myDate.getFullYear()
     }
-    
+
     const floatAsWord = (num) => {
       if (num >= 4.5) {
         return 'Hervorragend'
@@ -127,7 +125,7 @@ class App extends Component {
         <div style={appStyles}>
           <h2 style={headlineStyle}>Schueleraustausch.net</h2>
           <p style={bottomStyle}>
-            {this.props.num_ratings} Schüler bewerteten&nbsp;  
+            {this.props.num_ratings} Schüler bewerteten&nbsp;
             <span style={orgaStyle}>{this.props.organisation}</span>
           </p>
           <div style={starSection}>
@@ -138,7 +136,9 @@ class App extends Component {
             <p>
               Stand: {abbreviateDate(this.props.updated_at)}<br />
               Aktuelle Schülerbewertungen auf<br />
-              <a style={linkStyle} href='https://www.schueleraustausch.net' alt='Bewertungen auf Schueleraustausch.net'>www.schueleraustausch.net</a>
+              <a style={linkStyle}
+                 href='https://www.schueleraustausch.net'
+                 alt='Bewertungen auf Schueleraustausch.net'>www.schueleraustausch.net</a>
             </p>
           </div>
         </div>

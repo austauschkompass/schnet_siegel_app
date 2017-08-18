@@ -17,13 +17,12 @@ class Client {
     })
   }
 
-  getStats(orgaSlug, token) {
+  getStats(orgaSlug) {
     const init = {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'Authorization': 'Token token=' + token,
+        'Content-Type': 'application/json'
       }
     }
 
