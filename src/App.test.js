@@ -10,6 +10,7 @@ it('renders without crashing', () => {
          num_ratings={42}
          updated_at='2017-08-01 12:00'
          average={3.67487}
+         url='http://example.com'
     />,
     div
   );
@@ -21,6 +22,7 @@ it('renders always given content', () => {
          num_ratings={42}
          updated_at='2017-08-01 12:00'
          average={3.67487}
+         url='http://example.com'
     />
   ).toJSON()
     expect(tree).toMatchSnapshot()

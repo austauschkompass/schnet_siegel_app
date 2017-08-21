@@ -9,7 +9,6 @@ exports[`renders always given content 1`] = `
       Object {
         "position": "relative",
         "right": "-155px",
-        "top": "44px",
         "width": "40px",
       }
     }
@@ -28,7 +27,7 @@ exports[`renders always given content 1`] = `
         "fontSize": "11px",
         "fontStyle": "normal",
         "lineHeight": "1.1",
-        "margin": "5px",
+        "margin": "-32px 5px 5px 5px",
         "padding": "8px",
         "textAlign": "left",
         "textShadow": "none",
@@ -61,7 +60,8 @@ exports[`renders always given content 1`] = `
     >
       42
        Schüler bewerteten 
-      <span
+      <a
+        href="http://example.com"
         style={
           Object {
             "fontWeight": "bold",
@@ -69,7 +69,7 @@ exports[`renders always given content 1`] = `
         }
       >
         GYG
-      </span>
+      </a>
     </p>
     <div
       style={
