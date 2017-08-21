@@ -19,7 +19,7 @@ if (root) {
                  num_ratings={res.data.num_ratings}
                  updated_at={res.data.updated_at}
                  average={res.data.average}
-                 url={res.data.url}
+                 url={'https://www.schueleraustausch.net/organisationen/' + res.data.organisation_slug + '/bewertungen' }
                  />,
             root);
       }
