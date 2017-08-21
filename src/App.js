@@ -13,7 +13,7 @@ import star45 from './star-4.5.png';
 import star5 from './star-5.png';
 
 const appStyles = {
-  margin: '5px',
+  margin: '-32px 5px 5px 5px',
   boxSizing: 'border-box',
   backgroundColor: 'white',
   color: '#363636',
@@ -43,7 +43,6 @@ const headlineStyle = {
 const siegelStyle = {
   position: 'relative',
   right: '-155px',
-  top: '44px',
   width: '40px',
 }
 
@@ -126,7 +125,8 @@ class App extends Component {
           <h2 style={headlineStyle}>Schueleraustausch.net</h2>
           <p style={bottomStyle}>
             {this.props.num_ratings} Schüler bewerteten&nbsp;
-            <span style={orgaStyle}>{this.props.organisation}</span>
+            <a style={orgaStyle}
+               href={this.props.url}>{this.props.organisation}</a>
           </p>
           <div style={starSection}>
             <img src={floatAsImage(this.props.average)} alt='bewertung' /><br />
