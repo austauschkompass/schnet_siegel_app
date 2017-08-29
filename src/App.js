@@ -54,6 +54,8 @@ const starSection = {
   paddingBottom: '10px',
   borderTop: '1px solid lightgrey',
   borderBottom: '1px solid lightgrey',
+  marginTop: '15px',
+  marginBottom: '15px',
   textAlign: 'center',
   fontSize: '12px'
 }
@@ -70,12 +72,14 @@ const bottomStyle = {
   textAlign: 'center',
   textDecoration: 'none',
   fontSize: '11px',
+  lineHeight: '1.3',
 }
 
 const linkStyle = {
   fontFamily: 'Arial, sans-serif',
   textDecoration: 'none',
   color: '#363636',
+  fontSize: '11px',
 }
 
 class App extends Component {
