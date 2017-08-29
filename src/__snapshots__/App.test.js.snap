@@ -40,10 +40,12 @@ exports[`renders always given content 1`] = `
       style={
         Object {
           "color": "#00a4f9",
+          "fontFamily": "Arial, sans-serif",
           "fontSize": "13px",
           "fontWeight": "bold",
           "lineHeight": "1.0",
           "textAlign": "center",
+          "textTransform": "none",
         }
       }
     >
@@ -52,7 +54,8 @@ exports[`renders always given content 1`] = `
     <p
       style={
         Object {
-          "fontSize": "10px",
+          "fontFamily": "Arial, sans-serif",
+          "fontSize": "11px",
           "textAlign": "center",
           "textDecoration": "none",
         }
@@ -64,6 +67,9 @@ exports[`renders always given content 1`] = `
         href="http://example.com"
         style={
           Object {
+            "color": "#00a4f9",
+            "fontFamily": "Arial, sans-serif",
+            "fontSize": "11px",
             "fontWeight": "bold",
           }
         }
@@ -76,6 +82,7 @@ exports[`renders always given content 1`] = `
         Object {
           "borderBottom": "1px solid lightgrey",
           "borderTop": "1px solid lightgrey",
+          "fontFamily": "Arial, sans-serif",
           "fontSize": "12px",
           "paddingBottom": "10px",
           "paddingTop": "10px",
@@ -98,7 +105,8 @@ exports[`renders always given content 1`] = `
     <div
       style={
         Object {
-          "fontSize": "10px",
+          "fontFamily": "Arial, sans-serif",
+          "fontSize": "11px",
           "textAlign": "center",
           "textDecoration": "none",
         }
@@ -116,6 +124,7 @@ exports[`renders always given content 1`] = `
           style={
             Object {
               "color": "#363636",
+              "fontFamily": "Arial, sans-serif",
               "textDecoration": "none",
             }
           }

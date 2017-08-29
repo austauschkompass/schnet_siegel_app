@@ -33,11 +33,13 @@ const appStyles = {
 }
 
 const headlineStyle = {
+  fontFamily: 'Arial, sans-serif',
   color: '#00a4f9',
   fontSize: '13px',
   fontWeight: 'bold',
   lineHeight: '1.0',
   textAlign: 'center',
+  textTransform: 'none',
 }
 
 const siegelStyle = {
@@ -47,6 +49,7 @@ const siegelStyle = {
 }
 
 const starSection = {
+  fontFamily: 'Arial, sans-serif',
   paddingTop: '10px',
   paddingBottom: '10px',
   borderTop: '1px solid lightgrey',
@@ -56,17 +59,21 @@ const starSection = {
 }
 
 const orgaStyle = {
-  //fontSize: '14px',
-  fontWeight: 'bold'
+  fontFamily: 'Arial, sans-serif',
+  fontWeight: 'bold',
+  color: '#00a4f9',
+  fontSize: '11px',
 }
 
 const bottomStyle = {
+  fontFamily: 'Arial, sans-serif',
   textAlign: 'center',
   textDecoration: 'none',
-  fontSize: '10px',
+  fontSize: '11px',
 }
 
 const linkStyle = {
+  fontFamily: 'Arial, sans-serif',
   textDecoration: 'none',
   color: '#363636',
 }
