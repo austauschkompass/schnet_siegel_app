@@ -65,6 +65,7 @@ const orgaStyle = {
   fontWeight: 'bold',
   color: '#00a4f9',
   fontSize: '11px',
+  backgroundColor: 'white',
 }
 
 const bottomStyle = {
@@ -80,6 +81,7 @@ const linkStyle = {
   textDecoration: 'none',
   color: '#363636',
   fontSize: '11px',
+  backgroundColor: '#ffffff',
 }
 
 class App extends Component {

@@ -68,6 +68,7 @@ exports[`renders always given content 1`] = `
         href="http://example.com"
         style={
           Object {
+            "backgroundColor": "white",
             "color": "#00a4f9",
             "fontFamily": "Arial, sans-serif",
             "fontSize": "11px",
@@ -127,6 +128,7 @@ exports[`renders always given content 1`] = `
           href="https://www.schueleraustausch.net"
           style={
             Object {
+              "backgroundColor": "#ffffff",
               "color": "#363636",
               "fontFamily": "Arial, sans-serif",
               "fontSize": "11px",
