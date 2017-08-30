@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import Client from './client'
-//import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
 const root = document.getElementById('schnet-ratings-widget')
 const client = new Client()
@@ -26,4 +26,4 @@ if (root) {
 
     })
 }
-//registerServiceWorker();
+registerServiceWorker();
