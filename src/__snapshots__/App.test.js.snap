@@ -73,6 +73,7 @@ exports[`renders always given content 1`] = `
             "fontFamily": "Arial, sans-serif",
             "fontSize": "11px",
             "fontWeight": "bold",
+            "textDecoration": "none",
           }
         }
       >

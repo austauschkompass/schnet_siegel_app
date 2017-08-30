@@ -64,6 +64,7 @@ const orgaStyle = {
   fontFamily: 'Arial, sans-serif',
   fontWeight: 'bold',
   color: '#00a4f9',
+  textDecoration: 'none',
   fontSize: '11px',
   backgroundColor: 'white',
 }
