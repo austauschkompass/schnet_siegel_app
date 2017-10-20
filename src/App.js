@@ -12,78 +12,81 @@ import star4 from './star-4.png';
 import star45 from './star-4.5.png';
 import star5 from './star-5.png';
 
-const appStyles = {
-  margin: '-32px 5px 5px 5px',
+const defaultStyle = {
   boxSizing: 'border-box',
+  padding: '0',
+  margin: '0',
+  verticalAlign: 'unset',
   backgroundColor: 'white',
+  border: 'none',
   color: '#363636',
-  width: '180px',
   fontFamily: 'Arial, sans-serif',
   fontSize: '11px',
-  textTransform: 'none',
-  textShadow: 'none',
-  border: '1px solid lightGray',
-  textAlign: 'left',
+  fontWeight: 'normal',
   fontStyle: 'normal',
-  lineHeight: '1.1',
+  textAlign: 'left',
+  textShadow: 'none',
+  textTransform: 'none',
+  textDecoration: 'none',
+  lineHeight: '1.1'
+}
+
+const appStyles = { ...defaultStyle,
+  margin: '-32px 0 5px 0',
+  width: '180px',
+  border: '1px solid lightGray',
   borderRadius: '6px',
   borderTop: '8px solid #00a4f9',
   boxShadow: '1px 1px 3px lightgrey',
   padding: '8px'
 }
 
-const headlineStyle = {
-  fontFamily: 'Arial, sans-serif',
+const headlineStyle = { ...defaultStyle,
   color: '#00a4f9',
   fontSize: '13px',
   fontWeight: 'bold',
   lineHeight: '1.0',
   textAlign: 'center',
-  textTransform: 'none',
+  margin: '11px 0'
 }
 
-const siegelStyle = {
+const siegelStyle = { ...defaultStyle,
   position: 'relative',
   right: '-155px',
-  width: '40px',
+  backgroundColor: 'transparent',
+  width: '40px'
 }
 
-const starSection = {
-  fontFamily: 'Arial, sans-serif',
-  paddingTop: '10px',
-  paddingBottom: '10px',
+const starSection = { ...defaultStyle,
+  padding: '10px 0',
   borderTop: '1px solid lightgrey',
   borderBottom: '1px solid lightgrey',
-  marginTop: '15px',
-  marginBottom: '15px',
+  margin: '15px 0',
   textAlign: 'center',
   fontSize: '12px'
 }
 
-const orgaStyle = {
-  fontFamily: 'Arial, sans-serif',
+const starsStyle = { ...defaultStyle }
+
+const averageStyle = {
+  ...defaultStyle,
+  fontSize: '12px',
+  fontWeight: 'bold'
+}
+
+const orgaStyle = { ...defaultStyle,
   fontWeight: 'bold',
-  color: '#00a4f9',
-  textDecoration: 'none',
-  fontSize: '11px',
-  backgroundColor: 'white',
+  color: '#00a4f9'
 }
 
-const bottomStyle = {
-  fontFamily: 'Arial, sans-serif',
+const paragraphStyle = { ...defaultStyle,
   textAlign: 'center',
-  textDecoration: 'none',
-  fontSize: '11px',
   lineHeight: '1.3',
+  margin: '10px 0'
 }
 
-const linkStyle = {
-  fontFamily: 'Arial, sans-serif',
-  textDecoration: 'none',
-  color: '#363636',
-  fontSize: '11px',
-  backgroundColor: '#ffffff',
-}
+const linkStyle = { ...defaultStyle,
+  color: '#00a4f9' }
 
 class App extends Component {
   render() {
@@ -133,28 +136,26 @@ class App extends Component {
     }
 
     return (
-      <div>
+      <div style={defaultStyle}>
         <img src={siegel} style={siegelStyle} alt="siegel"/>
         <div style={appStyles}>
           <h2 style={headlineStyle}>Schueleraustausch.net</h2>
-          <p style={bottomStyle}>
+          <p style={paragraphStyle}>
             {this.props.num_ratings} Schüler bewerteten&nbsp;
             <a style={orgaStyle}
                href={this.props.url}>{this.props.organisation}</a>
           </p>
           <div style={starSection}>
-            <img src={floatAsImage(this.props.average)} alt='bewertung' /><br />
-            <strong>{floatAsWord(this.props.average)} ({this.props.average.toFixed(1)}/5)</strong>
+            <img src={floatAsImage(this.props.average)} style={starsStyle} alt='bewertung' /><br />
+            <strong style={averageStyle}>{floatAsWord(this.props.average)} ({this.props.average.toFixed(1)}/5)</strong>
           </div>
-          <div style={bottomStyle}>
-            <p>
-              Stand: {abbreviateDate(this.props.updated_at)}<br />
-              Aktuelle Schülerbewertungen auf<br />
-              <a style={linkStyle}
-                 href='https://www.schueleraustausch.net'
-                 alt='Bewertungen auf Schueleraustausch.net'>www.schueleraustausch.net</a>
-            </p>
-          </div>
+          <p style={paragraphStyle}>
+            Stand: {abbreviateDate(this.props.updated_at)}<br />
+            Aktuelle Schülerbewertungen auf<br />
+            <a style={linkStyle}
+               href='https://www.schueleraustausch.net'
+               alt='Bewertungen auf Schueleraustausch.net'>www.schueleraustausch.net</a>
+          </p>
         </div>
       </div>
     );
