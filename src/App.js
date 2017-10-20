@@ -31,6 +31,10 @@ const defaultStyle = {
   lineHeight: '1.1'
 }
 
+const wrapperStyle = { ...defaultStyle,
+  backgroundColor: 'transparent'
+}
+
 const appStyles = { ...defaultStyle,
   margin: '-32px 0 5px 0',
   width: '180px',
@@ -136,7 +140,7 @@ class App extends Component {
     }
 
     return (
-      <div style={defaultStyle}>
+      <div style={wrapperStyle}>
         <img src={siegel} style={siegelStyle} alt="siegel"/>
         <div style={appStyles}>
           <h2 style={headlineStyle}>Schueleraustausch.net</h2>

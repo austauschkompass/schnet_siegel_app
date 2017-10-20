@@ -4,7 +4,7 @@ exports[`renders always given content 1`] = `
 <div
   style={
     Object {
-      "backgroundColor": "white",
+      "backgroundColor": "transparent",
       "border": "none",
       "boxSizing": "border-box",
       "color": "#363636",
