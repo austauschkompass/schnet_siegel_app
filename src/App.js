@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import packageJson from '../package.json'
+import 'navigator.sendbeacon'
 import siegel from './siegel-s.png';
 import star0 from './star-0.png';
 import star05 from './star-0.5.png';
@@ -11,6 +13,13 @@ import star35 from './star-3.5.png';
 import star4 from './star-4.png';
 import star45 from './star-4.5.png';
 import star5 from './star-5.png';
+
+const { name: APP_NAME, version: APP_VERSION } = packageJson
+
+navigator.sendBeacon(
+  'https://api.apps.austauschkompass.de/' + APP_NAME + '/track',
+  JSON.stringify({ version: APP_VERSION, url: document.location.href })
+)
 
 const defaultStyle = {
   boxSizing: 'border-box',
