@@ -4,7 +4,9 @@
   "private": true,
   "module": "index.js",
   "dependencies": {
-    "navigator.sendbeacon": "^0.0.20",
+    "navigator.sendbeacon": "^0.0.20"
+  },
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -17,6 +19,8 @@
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "react-test-renderer": "^18.3.1",
     "rollup": "^4.28.0",
