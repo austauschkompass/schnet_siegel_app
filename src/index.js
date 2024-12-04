@@ -5,7 +5,12 @@ import App from './App'
 import Client from './client'
 
 const root = document.getElementById('schnet-ratings-widget')
-const client = new Client()
+
+const client = new Client({
+  // DEPRECATED: we should not rely on build process to set defaults...
+  host: process.env.REACT_APP_API_HOST,
+  prefix: process.env.REACT_APP_API_PREFIX
+})
 
 if (root) {
   const organisation = root.dataset.organisation

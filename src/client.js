@@ -1,11 +1,10 @@
 class Client {
 
 
-  constructor() {
-    this.host = process.env.REACT_APP_API_HOST
-    this.prefix = process.env.REACT_APP_API_PREFIX
+  constructor({ host, prefix }) {
+    this.host = host
+    this.prefix = prefix
   }
-
 
   checkStatus(response) {
     if (response.status < 500) {
