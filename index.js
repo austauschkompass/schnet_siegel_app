@@ -3,7 +3,7 @@
 var React = require('react');
 
 var name = "schnet_siegel_app";
-var version = "0.1.0";
+var version = "0.1.1";
 var module$1 = "index.js";
 var dependencies = {
 	"navigator.sendbeacon": "^0.0.20"
