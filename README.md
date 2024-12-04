@@ -1,6 +1,5 @@
 # Schueleraustausch.net Bewertungssiegel Widget
 
-
 Consider you are an organisation with the slug __exe__ and want to include the widget,
 add the following to your own website's `<body>`:
 
@@ -9,16 +8,29 @@ add the following to your own website's `<body>`:
 <script src='https://assets.schueleraustausch.de/js/schnet-ratings-widget.js'></script>
 ```
 
-## SCHDE-Api:
+## Usage as React Component
 
-single organisation:
+You can also install this repository as a dependency and integrate the Widget as a React component.
+
+To add it to your `package.json` run:
 
 ```
-curl http://localhost:3000/api/v2/rating_stats/gyg
-```
-all organisations:
-```
-curl http://localhost:3000/api/v2/rating_stats
+yarn add git+ssh://git@github.com/austauschkompass/schnet_siegel_app.git#semver:^0.1.1
 ```
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Then import and use it in your project via (assuming your organisation slug is `exe`):
+
+```jsx
+import { SchnetSiegelComponent } from 'schnet_siegel_app'
+
+const MyComponent = () => {
+
+  return (
+    <>
+      <h1>My Component</h1>
+      <SchnetSiegelComponent organisation={'exe'} />
+    </>
+  )
+}
+
+```

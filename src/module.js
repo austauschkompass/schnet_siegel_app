@@ -24,7 +24,7 @@ const SchnetSiegelComponent = ({ organisation }) => {
     }
 
     fetchStats()
-  }, [client])
+  }, [])
 
   if (stats) {
     return (
