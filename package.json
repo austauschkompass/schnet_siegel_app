@@ -1,19 +1,35 @@
 {
   "name": "schnet_siegel_app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
+  "module": "index.js",
   "dependencies": {
-    "navigator.sendbeacon": "^0.0.20",
+    "navigator.sendbeacon": "^0.0.20"
+  },
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "react-test-renderer": "^18.3.1"
+    "react-test-renderer": "^18.3.1",
+    "rollup": "^4.28.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-component": "BABEL_ENV=production rollup -m inline -c",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
