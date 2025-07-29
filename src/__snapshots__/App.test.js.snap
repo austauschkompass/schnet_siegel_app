@@ -146,6 +146,7 @@ exports[`renders always given content 1`] = `
             "verticalAlign": "unset",
           }
         }
+        title="Schüleraustausch Bewertungen für GYG"
       >
         GYG
       </a>
@@ -255,7 +256,6 @@ exports[`renders always given content 1`] = `
       Aktuelle Schülerbewertungen auf
       <br />
       <a
-        alt="Bewertungen auf Schueleraustausch.net"
         href="https://www.schueleraustausch.net"
         style={
           Object {
@@ -277,6 +277,7 @@ exports[`renders always given content 1`] = `
             "verticalAlign": "unset",
           }
         }
+        title="Bewertungen auf Schueleraustausch.net"
       >
         www.schueleraustausch.net
       </a>
