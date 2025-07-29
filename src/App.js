@@ -158,7 +158,7 @@ const App = (props) => {
           {props.num_ratings} Schüler bewerteten&nbsp;
           <a style={orgaStyle}
              href={props.url}
-             title={`Schüleraustausch Bewertungen für ${props.organisation}`}>{props.organisation}</a>
+             title={`Schueleraustausch.net-Bewertungen für ${props.organisation}`}>{props.organisation}</a>
         </p>
         <div style={starSection}>
           <img src={floatAsImage(props.average)} style={starsStyle} alt='bewertung' /><br />
